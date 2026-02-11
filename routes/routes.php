@@ -1,0 +1,80 @@
+<?php
+function route($page)
+{
+    switch ($page) {
+        case 'home': 
+            return 'views/home.php';
+        case 'login': 
+            return 'views/login.php';
+        case 'logout': 
+            return 'views/logout.php';
+        case 'registrasi': 
+            return 'views/register.php';
+        case 'pengaduan': 
+            return 'views/pengaduan.php';
+        case 'tambahpengaduan': 
+            return 'views/tambah_pengaduan.php';
+        case 'hapus_pengaduan': 
+            return 'views/hapus_pengaduan.php';
+        case 'hapus_lokasi':
+            return 'views/hapus_lokasi.php';
+        case 'hapus_berita':
+            return 'views/hapus_berita.php';
+        case 'hapus_user':
+            return 'views/hapus_user.php';
+        case 'laporan': 
+            return 'views/laporan.php';
+        case 'user':
+            return 'views/user_dashboard.php';
+        case 'admin': 
+            return 'views/admin_dashboard.php';
+        case 'tanggapan': 
+            return 'views/tanggapan.php';
+        case 'cetak_laporan': 
+            return 'views/cetak_laporan.php';
+        case 'cetak_user': 
+            return 'views/cetak_user.php';
+        case 'cetak_berita': 
+            return 'views/cetak_berita.php';
+        case 'profil': 
+            return 'views/profil.php';
+        case 'lokasi': 
+            return 'views/lokasi.php';
+        case 'berita': 
+            return 'views/berita.php';
+        case 'berita_public': 
+            return 'views/berita_public.php';
+        case 'berita_detail':
+            return 'views/berita_detail.php';
+        case 'tambah_berita': 
+            return 'views/tambah_berita.php';
+        case 'edit_berita': 
+            return 'views/edit_berita.php';
+        case 'tambah_lokasi': 
+            return 'views/tambah_lokasi.php';
+        case 'edit_lokasi': 
+            return 'views/edit_lokasi.php';
+        case 'tambah_kategori':
+            return 'views/tambah_kategori.php';
+        case 'edit_kategori':
+            return 'views/edit_kategori.php';
+        case 'hapus_kategori':
+            return 'views/hapus_kategori.php';
+        case 'cetak_tanggapan': 
+            return 'views/cetak_tanggapan.php';
+        case 'riwayat': 
+            return 'views/riwayat_pengaduan.php';
+        case 'feedback': 
+            return 'views/feedback_list.php'; 
+        case 'ubah_feedback': 
+            return 'views/ubah_feedback.php';
+        case 'simpan_feedback':
+            return 'views/simpan_feedback.php'; 
+        case 'settings':
+            return 'views/settings.php';
+        default: 
+            return 'views/home.php';
+            return 'views/maintenance_page.php';
+    }
+}
+?>

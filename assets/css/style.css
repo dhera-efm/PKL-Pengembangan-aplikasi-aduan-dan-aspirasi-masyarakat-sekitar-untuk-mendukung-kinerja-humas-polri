@@ -1,0 +1,94 @@
+#beritaSlider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-track {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+}
+
+.berita-group {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0,0,0,0.35);
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 22px;
+    transition: all .2s;
+    border-radius: 5px;
+    z-index: 10;
+}
+
+.nav-btn:hover {
+    background: rgba(0,0,0,0.6);
+}
+
+#prevBtn {
+    left: -5px;
+}
+
+#nextBtn {
+    right: -5px;
+}
+
+.berita-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.berita-card .card-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.berita-card .btn {
+    margin-top: auto;
+}
+
+.card-title {
+  font-weight: 600;
+  height: 42px;         
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; 
+  -webkit-box-orient: vertical;
+}
+
+.card-text-limit {
+  font-size: 0.9rem;
+  color: #555;
+  height: 40px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
+
+.berita-item img,
+.card-img-top {
+  height: 140px;
+  object-fit: cover;
+}
+
+@keyframes slideBerita {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.berita-wrapper:hover .berita-slider {
+  animation-play-state: paused;
+}
